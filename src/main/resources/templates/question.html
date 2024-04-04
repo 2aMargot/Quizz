@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz</title>
+    <link rel="stylesheet" href=styles.css>
+    <style>
+        body{
+            font-family: Calibri, serif;
+            background-color: beige;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 50px 50px 100px 50px;
+            text-align: center;
+            background-color: #baefba;
+            color: #001c00;
+            border-radius: 10px;
+        }
+
+        h1{
+            font-family: "Calibri Light", serif;
+            color: #1c6b1c;
+            margin: 50px 50px 100px 50px;
+            font-size: xx-large;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border-color: #399639;
+            background-color: beige;
+            color: #1c6b1c;
+            font-weight: bold;
+        }
+
+        button:hover{
+            background-color: ivory;
+            color: #001c00;
+            border-color: #baefba;
+        }
+
+        input[type="text"],
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <h1>Question 1</h1>
+    <p>Quelle est la capitale de la France ?</p>
+    <form action="/question/submit" method="post">
+        <input type="radio" id="paris" name="reponse" value="paris">
+        <label for="paris">Paris</label><br>
+        <input type="radio" id="londres" name="reponse" value="londres">
+        <label for="londres">Londres</label><br>
+        <input type="radio" id="berlin" name="reponse" value="berlin">
+        <label for="berlin">Berlin</label><br>
+        <button type="submit">Valider</button>
+    </form>
+</div>
+</body>
+</html>
+
+<!--<!DOCTYPE html>-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Quizz</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Quizz</h1>-->
+<!--<p>Bienvenue, <span th:text="${username}">utilisateur</span> !</p>-->
+<!--<form th:action="@{/quizz}" method="get">-->
+<!--    &lt;!&ndash; Affichage de la question &ndash;&gt;-->
+<!--    <div th:if="${question}">-->
+<!--        <p th:text="${question.text}"></p>-->
+<!--        <ul>-->
+<!--            &lt;!&ndash; Affichage des réponses &ndash;&gt;-->
+<!--            <li th:each="answer : ${question.correctAnswer}">-->
+<!--                <input type="radio" th:id="${'answer_' + __${answer}__}" name="selectedAnswer" th:value="${answer}">-->
+<!--                <label th:for="${'answer_' + __${answer}__}" th:text="${answer}"></label>-->
+<!--            </li>-->
+<!--            <li th:each="answer : ${question.incorrectAnswers}">-->
+<!--                <input type="radio" th:id="${'answer_' + __${answer}__}" name="selectedAnswer" th:value="${answer}">-->
+<!--                <label th:for="${'answer_' + __${answer}__}" th:text="${answer}"></label>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--        &lt;!&ndash; Passage à la prochaine question ou fin du quiz &ndash;&gt;-->
+<!--        <input type="hidden" name="id" th:value="${question.id + 1}">-->
+<!--        <button type="submit">Question suivante</button>-->
+<!--    </div>-->
+<!--    &lt;!&ndash; Fin du quiz &ndash;&gt;-->
+<!--    <div th:unless="${question}">-->
+<!--        <p>Merci d'avoir répondu à toutes les questions !</p>-->
+<!--        <a th:href="@{/accueil/end}">Terminer</a>-->
+<!--    </div>-->
+<!--</form>-->
+<!--</body>-->
+<!--</html>-->
