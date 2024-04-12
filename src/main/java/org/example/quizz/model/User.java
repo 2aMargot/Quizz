@@ -1,11 +1,11 @@
 package org.example.quizz.model;
 import lombok.Data;
-import org.example.quizz.model.Question;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 @Data
-public class User {
+public class User implements Serializable {
 
     protected String pseudo;
     protected int index;
