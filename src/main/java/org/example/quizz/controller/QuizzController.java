@@ -22,7 +22,7 @@ public class QuizzController {
         int index = user.getIndex();
 
         if (index >= 0 && index < questions.size()){
-            if (questions.get(index).getReponseCorrecte().equalsIgnoreCase(answer)) {
+            if (questions.get(index).getCorrectAnswer().equalsIgnoreCase(answer)) {
                 user.setScore(user.getScore()+1);
             }
 

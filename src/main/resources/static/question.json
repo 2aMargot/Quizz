@@ -1,16 +1,14 @@
-{
-  "response_code": 0,
-  "results": [
+ [
     {
       "type": "multiple",
       "difficulty": "easy",
       "category": "Science: Computers",
       "question": "What is the most preferred image format used for logos in the Wikimedia database?",
-      "correct_answer": ".svg",
+      "correct_answer": "svg",
       "incorrect_answers": [
-        ".png",
-        ".jpeg",
-        ".gif"
+        "png",
+        "jpeg",
+        "gif"
       ]
     },
     {
@@ -27,12 +25,12 @@
       "type": "multiple",
       "difficulty": "easy",
       "category": "Science: Computers",
-      "question": "How long is an IPv6 address?",
-      "correct_answer": "128 bits",
+      "question": "How many bits has an IVP 6 address ?",
+      "correct_answer": "128",
       "incorrect_answers": [
-        "32 bits",
-        "64 bits",
-        "128 bytes"
+        "32",
+        "64",
+        "129"
       ]
     },
     {
@@ -50,13 +48,13 @@
     {
       "type": "multiple",
       "difficulty": "easy",
-      "category": "Science: Computers",
-      "question": "What does the computer software acronym JVM stand for?",
-      "correct_answer": "Java Virtual Machine",
+      "category": "World: General",
+      "question": "What is the currency of Japan?",
+      "correct_answer": "Yen",
       "incorrect_answers": [
-        "Java Vendor Machine",
-        "Java Visual Machine",
-        "Just Virtual Machine"
+        "Won",
+        "Dollar",
+        "Euro"
       ]
     },
     {
@@ -74,13 +72,13 @@
     {
       "type": "multiple",
       "difficulty": "easy",
-      "category": "Science: Computers",
-      "question": "What does the &quot;MP&quot; stand for in MP3?",
-      "correct_answer": "Moving Picture",
+      "category": "General: Vocabulary",
+      "question": "What is the opposite of nocturnal?",
+      "correct_answer": "Diurnal",
       "incorrect_answers": [
-        "Music Player",
-        "Multi Pass",
-        "Micro Point"
+        "Crepuscular",
+        "Matutinal",
+        "Vespertine"
       ]
     },
     {
@@ -90,9 +88,9 @@
       "question": "Which computer hardware device provides an interface for all other connected devices to communicate?",
       "correct_answer": "Motherboard",
       "incorrect_answers": [
-        "Central Processing Unit",
-        "Hard Disk Drive",
-        "Random Access Memory"
+        "CPU",
+        "Mouse",
+        "RAM"
       ]
     },
     {
@@ -118,4 +116,3 @@
       ]
     }
   ]
-}
